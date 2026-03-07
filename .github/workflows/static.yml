@@ -1,0 +1,18 @@
+name: Static Site CI
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: upptime/uptime-monitor@master
+        with:
+          command: site
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          SECRETS_CONTEXT: ${{ toJson(secrets) }}
