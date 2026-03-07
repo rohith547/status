@@ -2,8 +2,12 @@ name: Graphs CI
 on:
   schedule:
     - cron: "0 0 * * *"
+  workflow_dispatch:
   repository_dispatch:
     types: [upptime]
+
+permissions:
+  contents: write
 
 jobs:
   graphs:
@@ -14,5 +18,5 @@ jobs:
         with:
           command: graphs
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
