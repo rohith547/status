@@ -1,0 +1,65 @@
+owner: rohith547
+repo: status
+
+sites:
+  - name: 🏠 Priced In HQ
+    url: https://pricedinhq.vercel.app
+
+  - name: 📈 Market Pulse
+    url: https://pricedin-pulse.vercel.app
+
+  - name: 🏦 Rate Pulse
+    url: https://pricedin-refi.vercel.app
+
+  - name: 🏛️ Fed Watch
+    url: https://pricedin-fed.vercel.app
+
+  - name: 📊 Earnings Pulse
+    url: https://pricedin-earnings.vercel.app
+
+  - name: 🔍 Insider Tracker
+    url: https://pricedin-insider.vercel.app
+
+  - name: 🧠 Macro Lens
+    url: https://pricedin-macro.vercel.app
+
+  - name: 💵 Follow the Money
+    url: https://pricedin-ftm.vercel.app
+
+  - name: 🔥 Short Squeeze
+    url: https://pricedin-squeeze.vercel.app
+
+  - name: 🏢 13F Tracker
+    url: https://pricedin-13f.vercel.app
+
+  - name: 📡 Signal Scanner
+    url: https://pricedin-scanner.vercel.app
+
+  - name: 📱 App Pulse
+    url: https://pricedin-apps.vercel.app
+
+assignees:
+  - rohith547
+
+status-website:
+  cname: false
+  logoUrl: https://pricedinhq.vercel.app/favicon.ico
+  name: Priced In Status
+  introTitle: Priced In — System Status
+  introMessage: Real-time uptime monitoring for all Priced In finance tools.
+  theme: light
+  topLevelLinks:
+    - title: All Tools
+      href: https://pricedinhq.vercel.app
+
+i18n:
+  footer: Powered by <a href="https://github.com/upptime/upptime" target="_blank">Upptime</a>
+
+notifications:
+  - type: github
+
+commit-messages:
+  readmeContent: ":pencil: Update summary in README [skip ci]"
+  summaryJson: ":card_file_box: Store response time [skip ci]"
+  statusChange: ":construction: Site $SITE is $STATUS [skip ci]"
+  graphsUpdate: ":bento: Update graphs [skip ci]"
